@@ -17,6 +17,7 @@ public class SpiTest {
          */
         ServiceLoader<Robot> serviceLoader = ServiceLoader.load(Robot.class);
         System.out.println("Java SPI");
+        serviceLoader.iterator().next().sayHi();
         serviceLoader.forEach(Robot::sayHi);
     }
 

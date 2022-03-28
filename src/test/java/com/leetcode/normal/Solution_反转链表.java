@@ -20,6 +20,7 @@ public class Solution_反转链表 {
         ListNode listNode = ListNode.convertStrToList(list);
         ListNode result = reverseList(listNode);
         ListNode.printList(result);
+        System.gc();
     }
 
     @Test

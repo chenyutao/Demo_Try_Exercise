@@ -11,6 +11,7 @@ import java.lang.ref.WeakReference;
 public class TestThreadLocal {
     @Test
     public void test222() throws Exception{
+        new ThreadLocal<>();
         MyObj myObj = buildObj();
         Thread.sleep(10);
         System.gc();
